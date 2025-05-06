@@ -1,0 +1,115 @@
+.mod-header {
+    margin: 0 0 1rem;
+    background-color: var(--color-background-header);
+
+    .header-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-left: 1rem;
+            .header-nav {
+                display: none;
+            }
+        }
+        .menu {
+            margin-right: 1rem;
+            height: 2rem;
+            font-size: 1.5rem;
+        }
+    }
+    .toggle-nav {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        gap: 1rem;
+    }
+}
+
+body {
+    margin: 0;
+    color: var(--color-text-body);
+    background-color: var(--color-background-body);
+    font-size: 1rem;
+    font-family: var(--text-font-body), serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+a {
+    color: var(--color-link);
+    font-size: 1rem;
+}
+
+.homepage {
+    margin: 1rem;
+    display: flex;
+    gap: 2rem;
+
+    .about {
+        flex-grow: 1;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .portrait {
+        max-width: 100%;
+    }
+
+}
+
+.hobbies {
+    display: grid;
+    gap: 2rem;
+    margin: 0 1rem 0 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    .hobbies img {
+        max-width: 100%;
+    }
+}
+
+h1, h2 {
+    font-family: var(--text-font-header), serif;
+    font-size: 2rem;
+    color: var(--color-text-header);
+}
+
+h2 {
+    box-sizing: border-box;
+    padding: 0 0.5rem 0 0.5rem;
+    border-bottom: 0.1rem solid var(--color-line-header);
+    min-width: 100%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media (min-width: 600px) {
+    .header-nav {
+        display: flex !important;
+        margin: 1rem;
+        gap: 1rem;
+    }
+    .menu {
+        display: none;
+    }
+    .dark-toggle {
+        padding-right: 1rem;
+    }
+}
