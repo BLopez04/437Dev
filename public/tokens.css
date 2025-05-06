@@ -1,0 +1,18 @@
+:root {
+    --color-text-header: #523;
+    --color-text-body: #700;
+    --color-link: #252;
+    --color-background-header: #ffcccc;
+    --color-background-body: #ffdddd;
+    --color-line-header: var(--color-link);
+    --text-font-header: "Anton", sans-serif;
+    --text-font-body: "Lato", sans-serif;
+}
+body.dark-mode {
+    --color-text-header: #ffaaaa;
+    --color-text-body: #ffcccc;
+    --color-link: #00ff77;
+    --color-background-header: #220015;
+    --color-background-body: #392222;
+    --color-line-header: var(--color-link);
+}
